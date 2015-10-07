@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'express-load@1.1',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json contatooh@1.0.0 No description
+6 warn package.json contatooh@1.0.0 No repository field.
+7 warn package.json contatooh@1.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'express-load@1.1', null ]
+10 verbose cache add name=undefined spec="express-load@1.1" args=["express-load@1.1",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'express-load@1.1',
+11 verbose parsed url   path: 'express-load@1.1',
+11 verbose parsed url   href: 'express-load@1.1' }
+12 verbose cache add name="express-load" spec="1.1" args=["express-load","1.1"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '1.1',
+13 verbose parsed url   path: '1.1',
+13 verbose parsed url   href: '1.1' }
+14 verbose addNamed [ 'express-load', '1.1' ]
+15 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+16 silly lockFile 92155fd0-express-load-1-1 express-load@1.1
+17 verbose lock express-load@1.1 C:\Users\rm74867\AppData\Roaming\npm-cache\92155fd0-express-load-1-1.lock
+18 silly addNameRange { name: 'express-load',
+18 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+18 silly addNameRange   hasData: false }
+19 verbose request where is /express-load
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id b83b9c5bfda9979b
+22 verbose url raw /express-load
+23 verbose url resolving [ 'https://registry.npmjs.org/', './express-load' ]
+24 verbose url resolved https://registry.npmjs.org/express-load
+25 verbose request where is https://registry.npmjs.org/express-load
+26 info trying registry request attempt 1 at 18:00:29
+27 http GET https://registry.npmjs.org/express-load
+28 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+29 info trying registry request attempt 2 at 18:00:40
+30 http GET https://registry.npmjs.org/express-load
+31 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+32 info trying registry request attempt 3 at 18:01:40
+33 http GET https://registry.npmjs.org/express-load
+34 silly lockFile 92155fd0-express-load-1-1 express-load@1.1
+35 silly lockFile 92155fd0-express-load-1-1 express-load@1.1
+36 error Error: CERT_UNTRUSTED
+36 error     at SecurePair.<anonymous> (tls.js:1381:32)
+36 error     at SecurePair.emit (events.js:92:17)
+36 error     at SecurePair.maybeInitFinished (tls.js:980:10)
+36 error     at CleartextStream.read [as _read] (tls.js:472:13)
+36 error     at CleartextStream.Readable.read (_stream_readable.js:341:10)
+36 error     at EncryptedStream.write [as _write] (tls.js:369:25)
+36 error     at doWrite (_stream_writable.js:226:10)
+36 error     at writeOrBuffer (_stream_writable.js:216:5)
+36 error     at EncryptedStream.Writable.write (_stream_writable.js:183:11)
+36 error     at write (_stream_readable.js:602:24)
+36 error     at flow (_stream_readable.js:611:7)
+36 error     at Socket.pipeOnReadable (_stream_readable.js:643:5)
+37 error If you need help, you may report this *entire* log,
+37 error including the npm and node versions, at:
+37 error     <http://github.com/npm/npm/issues>
+38 error System Windows_NT 6.1.7601
+39 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express-load@1.1" "--save"
+40 error cwd C:\Users\rm74867\Desktop\Contatooh
+41 error node -v v0.10.35
+42 error npm -v 1.4.28
+43 verbose exit [ 1, true ]

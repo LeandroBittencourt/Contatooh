@@ -1,11 +1,19 @@
 <div class="jumbotron">
   <h1 class="text-center">Bem vindo ao Contatooh</h1>
 </div>
+<p ng-show="mensagem.texto">
+  {{mensagem.texto}}
+</p>
 <button class="btn btn-primary" ng-click="incrementa()">
   Novo
 </button>
-<input ng-model="filtro" type="search" placeholder="parte do nome">
-<p>Contatos cadastrados: {{total}}</p>
+<input ng-model="filtro" type="search" placeholder="parte do nome"/>
+<p ng-show="contatos.length">
+  Contatos cadastrados: {{contatos.length}}
+</p>
+<p class="text-info" ng-hide="contatos.length">
+  Não há contatos cadastrados.
+</p>
 <div class="table-responsive">
   <table class="table table-hover">
     <tr>
@@ -19,7 +27,7 @@
       </td>
       <td>{{contato.email}}</td>
       <td class="text-center">
-        <button class="btn btn-warning">Remover</button>
+        <button ng-click="remove(contato)" class="btn btn-warning">Remover</button>
       </td>
     </tr>
   </table>

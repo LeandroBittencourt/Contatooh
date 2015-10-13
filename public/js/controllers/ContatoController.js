@@ -1,9 +1,8 @@
 angular.module('contatooh').controller('ContatoController',
-  function($scope,$routeParams,$resource){
+  function($scope,$routeParams,Contato){
     console.log($routeParams.contatoId);
     $scope.mensagem = {texto:''};
     
-    var Contato = $resource('/contatos/:id');
     
     if($routeParams.contatoId){
       Contato.get({id : $routeParams.contatoId},

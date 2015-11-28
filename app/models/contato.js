@@ -14,7 +14,7 @@ module.exports = function () {
       }
     },
     emergencia: {
-      type : mongoose.Schema.ObjectId;
+      type : mongoose.Schema.ObjectId,
       ref : 'Contato'
     }
   });

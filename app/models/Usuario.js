@@ -1,4 +1,6 @@
 var mongoose = require('mongoose');
+var findOrCreate = require('mongoose-findorcreate');
+
 
 module.exports = function () {
   var schema = mongoose.Schema({
@@ -18,5 +20,6 @@ module.exports = function () {
       default: Date.now
     }
   });
-  return mogoose.model('Usuario', schema);
+  schema.plugin(findOrCreate);
+  return mongoose.model('Usuario', schema);
 };

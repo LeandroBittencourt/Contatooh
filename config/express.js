@@ -22,7 +22,7 @@ module.exports = function() {
   app.use(require('method-override')());
   app.use(cookieParser());
   app.use(session({
-    secret : 'homem avestruz'.
+    secret : 'homem avestruz',
     resave : true,
     saveUnitialized : true
   }));
